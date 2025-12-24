@@ -72,7 +72,7 @@ namespace Simple_Blackjack
             Console.WriteLine("               BLACKJACK");
             Console.WriteLine("══════════════════════════════════════════\n");
 
-            Console.WriteLine($"    KRUPER:{score}");
+            Console.WriteLine($"    KRUPIER:{score}");
             DrawCardsRow(dealerHand.Cards, hideSecondCard: !showDealerHoleCard);
             Console.WriteLine();
 
@@ -160,7 +160,7 @@ namespace Simple_Blackjack
             Console.Write("Chcesz zagrać jeszcze raz? y/n: ");
             string input = Console.ReadLine()?.ToLower();
             if (input == "y") Start();
-            else Console.Write("99% hazardzistów poddaje się przed swoją największą wygraną, jeteś pewien, że chcesz wyjść? y/n: ");
+            else Console.Write("99% hazardzistów poddaje się przed swoją największą wygraną, jesteś pewien, że chcesz wyjść? y/n: ");
             input = Console.ReadLine()?.ToLower();
             if (input == "y") Stop();
             else Stop();
