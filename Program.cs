@@ -1,10 +1,13 @@
-﻿namespace Simple_Blackjack
+﻿using System;
+
+namespace Simple_Blackjack
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Game game = new Game();
+            game.Start();
         }
     }
 }
