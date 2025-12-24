@@ -156,6 +156,7 @@ namespace Simple_Blackjack
             else if (playerScore > dealerScore) Console.WriteLine("WYGRANA!");
             else if (playerScore <= 21 && dealerScore > 21) Console.WriteLine("WYGRANA!");
             else if (playerScore == dealerScore) Console.WriteLine("REMIS! Dealer ma tyle samo punktów co ty");
+            else Console.WriteLine("PRZEGRANA! Krupier ma więcej punktów.");
 
             Console.Write("Chcesz zagrać jeszcze raz? y/n: ");
             string input = Console.ReadLine()?.ToLower();
